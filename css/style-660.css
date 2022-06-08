@@ -18,13 +18,15 @@
     text-align: right!important;
     background-color: #9dc9c4;
     background-image: url("../images/qm.svg");
-    background-position: right 10% bottom 10%;
+    background-position: right 10% bottom 20%;
     background-repeat: no-repeat;
+    background-size: 120px;
   }
 
   .b2{
     left: 50%;
     top: 0;
+    justify-content: center;
   }
 
   .b2 img{
@@ -40,6 +42,7 @@
 
   .b3{
     top: 50%;
+    justify-content: center;
   }
 
   .b3 img{
@@ -56,6 +59,7 @@
   .b4{
     left: 50%;
     top: 50%;
+    justify-content: center;
   }
 
   .b4 img{
