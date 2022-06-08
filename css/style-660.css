@@ -1,0 +1,108 @@
+@media (min-width: 660px) {
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+
+  .box h1{
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .b1{
+    text-align: right!important;
+    background-color: #9dc9c4;
+    background-image: url("../images/qm.svg");
+    background-position: right 10% bottom 10%;
+    background-repeat: no-repeat;
+  }
+
+  .b2{
+    left: 50%;
+    top: 0;
+  }
+
+  .b2 img{
+    height: 50%;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+
+  .b2:hover img{
+    height: 60%;
+    margin-bottom: -2.5%;
+  }
+
+  .b3{
+    top: 50%;
+  }
+
+  .b3 img{
+    height: 50%;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+
+  .b3:hover img{
+    height: 55%;
+    margin-bottom: -2.5%;
+  }
+
+  .b4{
+    left: 50%;
+    top: 50%;
+  }
+
+  .b4 img{
+    height: 35%;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+
+  .b4:hover img{
+    height: 40%;
+    margin-bottom: -2.5%;
+  }
+
+  .modal-box {
+    width: 50%;
+    height: 70%;
+  }
+
+
+  .incubation-container img{
+    height: 90px;
+  }
+
+  .incubation-container span{
+    font-size: 1.5rem;
+  }
+
+  .incubation-container h3{
+    font-size: 3rem;
+    margin: 0;
+  }
+
+
+  .s-modal-contents .symlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 12px;
+    padding: 40px 0;
+    background: #60a197;
+  }
+
+  .symlist-container img{
+    height: 110px;
+  }
+
+  .symlist-container div{
+    width: 30%;
+  }
+}
