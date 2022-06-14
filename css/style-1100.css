@@ -8,4 +8,30 @@
     font-size: 2.5rem;
   }
 
+  .d-modal-contents h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .incubation-container span{
+    font-size: 1.3rem;
+  }
+
+  .incubation-container h3{
+    font-size: 2.3rem;
+    margin: 0;
+  }
+
+  .incubation-container img{
+    height: 70px;
+  }
+
+  .symlist-container img{
+    height: 70px;
+  }
+
+  .symlist-container strong{
+    font-size: 1.4rem;
+  }
+
 }

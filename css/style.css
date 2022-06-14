@@ -32,15 +32,16 @@ html{
 
 .fl-box h1,
 .sl-box h1{
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   text-align: left;
   color: #ffffff;
+  margin: 0;
 }
 
 .fl-box h2,
 .sl-box h2{
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -174,7 +175,7 @@ html{
 }
 
 .d-modal-contents h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -189,16 +190,16 @@ html{
 }
 
 .incubation-container span{
-  font-size: 1.3rem;
+  font-size: .8rem;
 }
 
 .incubation-container h3{
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 
 .incubation-container img{
-  height: 70px;
+  height: 50px;
 }
 
 .d-modal-contents .symlist-container{
@@ -210,22 +211,21 @@ html{
   background: #60a197;
 }
 
-
 .symlist-container img{
-  height: 70px;
+  height: 50px;
   margin-bottom: 12px;
 }
 
 .symlist-container div{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 32%;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .symlist-container strong{
-  font-size: 1.4rem;
+  font-size: .9rem;
 }
 
 

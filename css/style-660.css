@@ -65,6 +65,15 @@
     cursor: pointer;
   }
 
+  .d-modal-contents h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .symlist-container strong {
+    font-size: 1.1rem;
+  }
+
 
 
   /****** Transform *********/
