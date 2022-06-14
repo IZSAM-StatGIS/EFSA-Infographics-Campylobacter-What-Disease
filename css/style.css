@@ -143,6 +143,10 @@ html{
   cursor: pointer;
 }
 
+.modal-close.sl-box-closed{
+  display: none;
+}
+
 .modal-close img{
   vertical-align: bottom;
 }
