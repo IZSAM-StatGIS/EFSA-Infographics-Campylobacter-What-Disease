@@ -1,27 +1,11 @@
 @media (min-width: 1100px) {
 
-  .box h1{
+  .fl-box h1{
     font-size: 4rem;
   }
 
-  .box h2{
+  .fl-box h2{
     font-size: 2.5rem;
   }
 
-  .b2 img{
-    height: 60%;
-  }
-
-  .b3 img{
-    height: 60%;
-  }
-
-  .b4 img{
-    height: 40%;
-  }
-
-  .modal-box {
-    width: 50%;
-    height: 40%;
-  }
 }

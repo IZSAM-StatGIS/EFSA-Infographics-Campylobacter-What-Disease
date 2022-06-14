@@ -6,102 +6,64 @@ fetch('contents.json').then(response => {
     return response.json();
   }).then(json => {
     JSON_contents = json;
-  }).catch(function(err) {
+  }).catch((err) =>{
     console.log(err)
   });
 
+function openSecondLevel(elem) {
 
-/* Build contents from JSON */
-function loadContents(elem) {
-  var elemId = elem.id;
-  var elemSelection = document.querySelector('#'+elemId);
-  var categoryBlock = elemSelection.closest(".grid-item");
-  if (categoryBlock.classList.contains("bacteria")) {
-    category = JSON_contents.bacteria[elemId];
-    categoryName = JSON_contents.bacteria["catname"];
-  }
-  if (categoryBlock.classList.contains("bacterial-toxins")) {
-    category = JSON_contents.toxins[elemId];
-    categoryName = JSON_contents.toxins["catname"];
-  }
-  if (categoryBlock.classList.contains("viruses")) {
-    category = JSON_contents.viruses[elemId];
-    categoryName = JSON_contents.viruses["catname"];
-  }
-  if (categoryBlock.classList.contains("parasites")) {
-    category = JSON_contents.parasites[elemId];
-    categoryName = JSON_contents.parasites["catname"];
-  }
-  if (categoryBlock.classList.contains("other")) {
-    category = JSON_contents.other[elemId];
-    categoryName = JSON_contents.other["catname"];
-  }
-  // define dom variable
-  var pathongenHead = document.querySelector('.pathogen-name');
-  var pathongenCategory = pathongenHead.querySelector('h3');
-  var pathongenName = pathongenHead.querySelector('h1');
-  var pathongenVisual = document.querySelector('.visual');
-  var pathongenIncubationPeriod = document.querySelector('.incubation-period p');
-  var pathongenDescription = document.querySelector('.pathogen-content-description p');
-  var pathongenSymptoms = document.querySelector('.pathogen-content-symptoms p');
-  var pathongenTransmission = document.querySelector('.pathogen-transmission');
-  var pathongenTransmissionContents = pathongenTransmission.querySelector('.pathogen-content-transmission p');
-  // define contents
-  pathongenCategory.innerHTML = categoryName;
-  pathongenName.innerHTML = category.name;
-  pathongenIncubationPeriod.innerHTML = category.incubation;
-  pathongenVisual.getElementsByTagName("img")[0].src = category.cover["src"];
-  pathongenVisual.getElementsByTagName("img")[0].alt = category.cover["alt"];
-  pathongenDescription.innerHTML = category.description;
-  pathongenSymptoms.innerHTML = category.symptoms;
-  pathongenTransmission.getElementsByTagName("img")[0].src = category.mtimage["src"];
-  pathongenTransmission.getElementsByTagName("img")[0].alt = category.mtimage["alt"];
-  pathongenTransmissionContents.innerHTML = category.transmission;
-  // show loadContents
-  bodyEl.classList.toggle("show-contents");
-  imagesLoaded( pathongenTransmission, function( instance ) {
-    pathongenTransmission.classList.toggle("show-image");
-  });
+  let htmlIw = document.querySelector('.infographics-wrap');
+  let otherHtmlElem = htmlIw.querySelector('div:not(#'+elem.parentElement.id+')');
+  let htmlElem = document.querySelector('#'+elem.parentElement.id);
+  let slModal = document.querySelector('.sl-modal');
+
+  otherHtmlElem.classList.add('fl-box-closed');
+  setTimeout(() => {htmlElem.classList.add('opacity-0')}, 290);
+  setTimeout(() => {htmlElem.classList.add('d-none')}, 400);
+  setTimeout(() => {slModal.classList.add('sl-modal-inn')}, 400);
+  setTimeout(() => {slModal.classList.add('opacity-1')}, 410);
+}
+
+function closeSecondLevel() {
+  let htmlIw = document.querySelector('.infographics-wrap');
+  let otherHtmlElem = htmlIw.querySelector('div:not(#fb1)');
+  let htmlElem = document.querySelector('#fb1');
+  let slModal = document.querySelector('.sl-modal');
+
+  slModal.classList.remove('opacity-1');
+  setTimeout(() => {slModal.classList.remove('sl-modal-inn')}, 200);
+  setTimeout(() => {htmlElem.classList.remove('d-none')}, 300);
+  setTimeout(() => {htmlElem.classList.remove('opacity-0')}, 400);
+  setTimeout(() => {otherHtmlElem.classList.remove('fl-box-closed');}, 600);
+
 }
 
 
-function openDetail(elem) {
-  elem.parentElement.classList.add('totop');
-  elem.parentElement.classList.add('inn');
+function openDetailLevel(elem) {
 
-  //Show modal
-  let modal = document.querySelector('.s-modal');
-  modal.classList.add('d-block');
-  setTimeout(function(){modal.classList.add('inn')}, 200);
+  let slModal = document.querySelector('.sl-modal');
+  let dModal = document.querySelector('.d-modal');
+  let htmlElem = document.querySelector('#'+elem.parentElement.id);
+  let otherElemCollection = slModal.querySelectorAll('div:not(#'+elem.parentElement.id+')');
 
-  //Get card contents
-  /*
-  let titleValue = JSON_contents[elemID].title;
-  let contentValue = JSON_contents[elemID].content;
-  let imgUrl = JSON_contents[elemID].imgUrl;
-
-  //Set modal contents
-  let modalVisualImg = document.querySelector('.modal-visual-img');
-  let modalTitle = document.querySelector('.modal-title');
-  let modalContent = document.querySelector('.modal-content');
-  modalVisualImg.src = imgUrl;
-  modalVisualImg.alt = titleValue;
-  modalTitle.innerHTML = "<h2>"+titleValue+"</h2>";
-  modalContent.innerHTML = contentValue;
-
-  //Show modal
-  let modal = document.querySelector('.modal');
-  modal.classList.add('d-block')
-  setTimeout(function(){modal.classList.add('inn')}, 200);
-   */
+  otherElemCollection.forEach((item) => { item.classList.add('sl-box-closed'); });
+  htmlElem.classList.add('sl-box-inn');
+  setTimeout(() => {htmlElem.classList.add('opacity-0')}, 300);
+  setTimeout(() => {dModal.classList.add('d-block')}, 350);
+  setTimeout(() => {dModal.classList.add('opacity-1')}, 400);
 }
 
+function closeDetailLevel(){
+  let slModal = document.querySelector('.sl-modal');
+  let dModal = document.querySelector('.d-modal');
+  let htmlElem = document.querySelector('#slb2');
+  let otherElemCollection = slModal.querySelectorAll('div:not(#slb2)');
 
-function closeModal(elem) {
-  let modal = document.querySelector('.s-modal');
-  modal.classList.remove('inn');
-  setTimeout(function(){
-    modal.classList.remove('d-block');
-    document.querySelector('.b2').classList.remove('inn')
-  }, 200);
+  dModal.classList.remove('opacity-1');
+  setTimeout(() => {dModal.classList.remove('d-block')}, 300);
+  setTimeout(() => {htmlElem.classList.remove('opacity-0')}, 300);
+  setTimeout(() => {
+    otherElemCollection.forEach((item) => { item.classList.remove('sl-box-closed'); });
+    htmlElem.classList.remove('sl-box-inn');
+  }, 500);
 }
