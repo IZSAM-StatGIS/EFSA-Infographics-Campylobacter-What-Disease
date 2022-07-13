@@ -42,17 +42,16 @@
       "backgroundImage": {
         "src": "images/symptoms_background.svg"
       },
-      "incubationPeriod": "2-5 days",
+      "incubationPeriod": "",
       "collection": [
-        {"name": "Diarrhoea", "abstract": "Rarely with mucus or blood in the stools", "img": "images/animals.svg"},
-        {"name": "Fever", "img": "images/animals.svg"},
-        {"name": "Abdominal cramps", "img": "images/animals.svg"}
       ]
     },
     "whois":{
       "backgroundImage": {
         "src": "images/symptoms_background.svg"
-      }
+      },
+      "collection": [
+      ]
     },
     "complications":{
       "backgroundImage": {
