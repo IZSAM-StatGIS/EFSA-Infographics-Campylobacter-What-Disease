@@ -6,13 +6,8 @@ export function getComplicationsTemplate(data){ return `
       <img src="${data.backgroundImage.src}" class="l-img">
       <div class="d-modal-contents">
         <h2>Complications</h2>
-        <div class="incubation-container">
-          <img src="images/icons/ic_incubation.svg">
-          <div>
-          </div>
-        </div>
         <div class="list-container">
-          
+
         </div>
       </div>
     </div>
