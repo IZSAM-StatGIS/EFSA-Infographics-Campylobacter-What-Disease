@@ -132,13 +132,14 @@ html{
   background-color: #74beb3;
   opacity: 0;
   transition: all 200ms ease-in;
+  overflow: hidden;
 }
 
 .modal-close{
   display: block;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  left: 12px;
   color: #fff;
   font-family: 'Verdana', sans-serif;
   cursor: pointer;
@@ -150,12 +151,25 @@ html{
 
 .modal-close img{
   vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffce3a;
+  cursor: pointer;
+  -webkit-transition: transform 0.3s ease 0.8s, background-color 0.3s ease;
+  transition: transform 0.3s ease 0.8s, background-color 0.3s ease;
+  margin-right: 6px;
+}
+
+.modal-close img:hover{
+  background-color: #e2bf35;
 }
 
 .modal-close span {
   font-size: 20px;
   line-height: 26px;
 }
+
 
 .l-img{
   display: block;
@@ -202,7 +216,7 @@ html{
   height: 50px;
 }
 
-.d-modal-contents .symlist-container{
+.d-modal-contents .list-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -211,12 +225,12 @@ html{
   background: #60a197;
 }
 
-.symlist-container img{
+.list-container img{
   height: 50px;
   margin-bottom: 12px;
 }
 
-.symlist-container div{
+.list-container div{
   display: flex;
   flex-direction: column;
   width: 32%;
@@ -224,7 +238,7 @@ html{
   margin-bottom: 20px;
 }
 
-.symlist-container strong{
+.list-container strong{
   font-size: .9rem;
 }
 
@@ -269,8 +283,8 @@ html{
   width: 100%;
 }
 
-
-/******** TEMP **************/
-.fb2:hover, .slb3:hover, .slb4:hover {
-  filter: grayscale(1) brightness(1.15);
+.slb4{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

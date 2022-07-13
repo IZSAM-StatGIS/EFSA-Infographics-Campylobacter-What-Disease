@@ -26,11 +26,11 @@
     height: 70px;
   }
 
-  .symlist-container img{
-    height: 70px;
+  .list-container img{
+    height: 100px;
   }
 
-  .symlist-container strong{
+  .list-container strong{
     font-size: 1.4rem;
   }
 

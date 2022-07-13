@@ -1,3 +1,63 @@
 {
-
+  "humans": {
+    "secondLevelItems": [
+      {"title": "Symptoms", "img": "images/symptoms.svg"},
+      {"title": "Who is at risk?", "img": "images/who_is_at_risk.svg"},
+      {"title": "Complications", "img": "images/complications.svg"}
+    ],
+    "symptoms": {
+      "backgroundImage": {
+        "src": "images/symptoms_background.svg"
+      },
+      "incubationPeriod": "2-5 days",
+      "collection": [
+        {"name": "Diarrhoea", "abstract": "Rarely with mucus or blood in the stools", "img": "images/icons/ic_diarrhoea.svg"},
+        {"name": "Fever", "img": "images/icons/ic_fever.svg"},
+        {"name": "Abdominal cramps", "img": "images/icons/ic_adbominal_cramps.svg"}
+      ]
+    },
+    "whois":{
+      "backgroundImage": {
+        "src": "images/who_is_at_risk.svg"
+      },
+      "collection": [
+        {"name": "Toddler", "abstract": "(1 to 4 years)", "img": "images/icons/ic_toddler.svg"},
+        {"name": "Young adults", "abstract": "(15 to 24 years)", "img": "images/icons/ic_young.svg"},
+        {"name": "Elderly", "abstract": "", "img": "images/icons/ic_eldery.svg"}
+      ]
+    },
+    "complications":{
+      "backgroundImage": {
+        "src": "images/symptoms_background.svg"
+      }
+    }
+  },
+  "animals": {
+    "secondLevelItems": [
+      {"title": "Symptoms", "img": "images/animals.svg"},
+      {"title": "Who is at risk?", "img": "images/animals.svg"},
+      {"title": "Complications", "img": "images/animals.svg"}
+    ],
+    "symptoms": {
+      "backgroundImage": {
+        "src": "images/symptoms_background.svg"
+      },
+      "incubationPeriod": "2-5 days",
+      "collection": [
+        {"name": "Diarrhoea", "abstract": "Rarely with mucus or blood in the stools", "img": "images/animals.svg"},
+        {"name": "Fever", "img": "images/animals.svg"},
+        {"name": "Abdominal cramps", "img": "images/animals.svg"}
+      ]
+    },
+    "whois":{
+      "backgroundImage": {
+        "src": "images/symptoms_background.svg"
+      }
+    },
+    "complications":{
+      "backgroundImage": {
+        "src": "images/symptoms_background.svg"
+      }
+    }
+  }
 }

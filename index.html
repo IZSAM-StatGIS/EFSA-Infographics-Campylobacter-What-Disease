@@ -25,7 +25,7 @@
 <section class="main">
   <div class="infographics-wrap">
     <div id="fb1" class="fl-box fb1">
-      <img src="images/humans.svg" onclick="openSecondLevel(this)">
+      <img src="images/humans.svg">
       <h2>Humans</h2>
     </div>
     <div id="fb2" class="fl-box fb2">
@@ -37,61 +37,16 @@
 
 
 <section class="sl-modal">
-  <div class="modal-close" onclick="closeSecondLevel()">
-    <span>Close</span><img width="24" src="images/icons/ic_close.svg">
-  </div>
-  <div class="sl-box slb1">
-    <h1>What<br>disease</h1>
-  </div>
-  <div id="slb2" class="sl-box slb2">
-    <img src="images/symptoms.svg" onclick="openDetailLevel(this)">
-    <h2>Symptoms</h2>
-  </div>
-  <div id="slb3" class="sl-box slb3">
-    <img src="images/who_is_at_risk.svg">
-    <h2>Who is at risk?</h2>
-  </div>
-  <div id="slb4" class="sl-box slb4">
-    <img src="images/complications.svg">
-    <h2>Complications</h2>
-  </div>
 </section>
 
 
 <section class="d-modal">
-    <div class="modal-close" onclick="closeDetailLevel(this)">
-      <span>Close</span><img width="24" src="images/icons/ic_close.svg">
+    <div class="detail-modal-body">
     </div>
-    <img src="images/symptoms_background.svg" class="l-img">
-    <div class="d-modal-contents">
-      <h2>Symptoms</h2>
-      <div class="incubation-container">
-        <img src="images/icons/ic_incubation.svg">
-        <div>
-          <span>Incubation period</span><br><h3>2-5 days</h3>
-        </div>
-      </div>
-      <div class="symlist-container">
-        <div>
-          <img src="images/icons/ic_diarrhoea.svg">
-          <strong>Diarrhoea</strong>
-          <small>Rarely with mucus or blood in the stools</small>
-        </div>
-        <div>
-          <img src="images/icons/ic_fever.svg">
-          <strong>Fever</strong>
-        </div>
-        <div>
-          <img src="images/icons/ic_adbominal_cramps.svg">
-          <strong>Abdominal cramps</strong>
-        </div>
-      </div>
-    </div>
-
 </section>
 
 
-<script src="js/functions.js"></script>
+<script type="module" src="js/functions.js"></script>
 
 <!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

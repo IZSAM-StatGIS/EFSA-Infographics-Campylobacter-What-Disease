@@ -23,7 +23,7 @@
   .slb3 img {
     height: 55%;
   }
-  
+
   .slb4 img {
     height: 40%;
   }
@@ -47,11 +47,11 @@
     height: 60px;
   }
 
-  .symlist-container img{
-    height: 60px;
+  .list-container img{
+    height: 80px;
   }
 
-  .symlist-container strong{
+  .list-container strong{
     font-size: 1.2rem;
   }
 
