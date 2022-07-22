@@ -7,8 +7,21 @@ export function getComplicationsTemplate(data){ return `
       <div class="d-modal-contents">
         <h2>Complications</h2>
         <div class="list-container">
-
+          ${getCollectionTemplate(data.collection)}
         </div>
       </div>
     </div>
 `}
+
+
+function getCollectionTemplate(collection){
+    let t = '';
+    collection.forEach((elem) => {
+        t += `<div>
+                <img src="${elem.img}">
+                <strong>${elem.name}</strong>
+                <small>${elem.abstract}</small>
+              </div>`
+    });
+    return t;
+}

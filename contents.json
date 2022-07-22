@@ -29,7 +29,14 @@
     "complications":{
       "backgroundImage": {
         "src": "images/symptoms_background.svg"
-      }
+      },
+      "collection": [
+        {"name": "Irritable Bowel disease", "abstract": "(including Crohn’s disease and ulcerative colitis)", "img": "images/icons/ic_bowel.svg"},
+        {"name": "Guillain-Barré syndrome", "abstract": "", "img": "images/icons/ic_gb.svg"},
+        {"name": "Miller Fisher syndrome", "abstract": "", "img": "images/icons/ic_mf.svg"},
+        {"name": "Reactive arthritis", "abstract": "", "img": "images/icons/ic_arthritis.svg"},
+        {"name": "Sepsis", "abstract": "", "img": "images/icons/ic_sepsis.svg"}
+      ]
     }
   },
   "animals": {
